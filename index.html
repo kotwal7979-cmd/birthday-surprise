@@ -1,2 +1,727 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="refresh" content="0; url=./birthday_love_embedded_photo.html"></head><body></body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday My Love ❤️</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+    background:
+        radial-gradient(circle at top,#5a071d 0%,#160008 45%,#050002 100%);
+}
+
+/* BACKGROUND */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background:
+        radial-gradient(circle at 20% 20%,rgba(255,0,80,.18),transparent 20%),
+        radial-gradient(circle at 80% 40%,rgba(255,0,100,.15),transparent 25%),
+        radial-gradient(circle at 50% 90%,rgba(255,50,100,.12),transparent 25%);
+
+    pointer-events:none;
+    z-index:-1;
+}
+
+/* MAIN CONTAINER */
+.container{
+    width:100%;
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+    padding:70px 20px;
+    position:relative;
+}
+
+/* SMALL HEARTS */
+.floating-heart{
+    position:fixed;
+    bottom:-60px;
+    color:#ff174f;
+    pointer-events:none;
+    animation:floatUp linear forwards;
+    z-index:-1;
+    filter:drop-shadow(0 0 10px #ff174f);
+}
+
+@keyframes floatUp{
+
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+    }
+
+}
+
+/* BIRTHDAY TITLE */
+
+.main-title{
+    font-family:'Great Vibes',cursive;
+    font-size:clamp(4rem,10vw,8rem);
+    color:white;
+    line-height:1;
+    text-shadow:
+        0 0 10px #ff1f5b,
+        0 0 30px #ff1f5b,
+        0 0 60px #d00045;
+
+    animation:titleGlow 2s infinite alternate;
+}
+
+@keyframes titleGlow{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.02);
+        text-shadow:
+        0 0 15px #ff1f5b,
+        0 0 50px #ff1f5b,
+        0 0 90px #ff1f5b;
+    }
+
+}
+
+.favorite{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(2rem,5vw,4rem);
+    margin-top:10px;
+    color:#fff5f6;
+}
+
+.love{
+    font-family:'Great Vibes',cursive;
+    color:#ff5a82;
+    font-size:clamp(3.5rem,8vw,6rem);
+    margin:10px 0 25px;
+}
+
+/* INTRO TEXT */
+
+.intro{
+    max-width:720px;
+    margin:0 auto 30px;
+    font-family:'Playfair Display',serif;
+    font-size:1.25rem;
+    line-height:1.7;
+    color:#ffe8ec;
+}
+
+.highlight{
+    color:#ff5d85;
+    font-weight:bold;
+}
+
+/* PHOTO */
+
+.photo-frame{
+    width:min(90vw,550px);
+    margin:35px auto;
+    padding:12px;
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #ffd6df,
+        #ffffff
+    );
+
+    border-radius:30px;
+
+    box-shadow:
+        0 0 10px #ff2d62,
+        0 0 40px rgba(255,20,80,.8),
+        0 0 80px rgba(255,20,80,.4);
+
+    position:relative;
+
+    animation:photoGlow 3s infinite alternate;
+}
+
+@keyframes photoGlow{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.015);
+        box-shadow:
+        0 0 25px #ff2d62,
+        0 0 70px rgba(255,20,80,.8),
+        0 0 120px rgba(255,20,80,.5);
+    }
+
+}
+
+.photo-frame img{
+
+    width:100%;
+    display:block;
+
+    border-radius:20px;
+
+    /* THIS MAKES PHOTO FULLY VISIBLE */
+    object-fit:contain;
+    max-height:650px;
+
+}
+
+/* YOU ARE */
+
+.you-are{
+
+    margin:35px 0 20px;
+
+    font-family:'Great Vibes',cursive;
+    font-size:4rem;
+
+    color:#fff;
+
+}
+
+/* LOVE CARDS */
+
+.love-points{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+
+    margin-bottom:35px;
+
+}
+
+.point{
+
+    min-width:150px;
+
+    padding:20px;
+
+    border-right:1px solid rgba(255,255,255,.4);
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.point:last-child{
+    border-right:none;
+}
+
+.point .emoji{
+
+    display:block;
+
+    font-size:2.5rem;
+
+    margin-bottom:8px;
+
+}
+
+/* LOVE MESSAGE */
+
+.message-box{
+
+    max-width:750px;
+
+    margin:30px auto;
+
+    padding:30px 25px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,120,150,.3);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+        0 0 30px rgba(255,0,70,.15);
+
+}
+
+.message-box p{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:1.3rem;
+
+    line-height:1.7;
+
+    color:#ffe8ec;
+
+}
+
+.final-love{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-size:1.4rem;
+
+    font-weight:bold;
+
+    color:#ff6d90;
+
+}
+
+/* BUTTON */
+
+button{
+
+    margin-top:20px;
+
+    border:none;
+
+    padding:20px 55px;
+
+    border-radius:20px;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:1.4rem;
+
+    font-weight:bold;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #ff174f,
+        #ff4f78
+    );
+
+    cursor:pointer;
+
+    box-shadow:
+        0 0 15px #ff174f,
+        0 0 40px rgba(255,20,79,.6);
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+        0 0 30px #ff174f,
+        0 0 70px #ff174f;
+
+}
+
+.small-text{
+
+    margin-top:20px;
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:2rem;
+
+    color:#ffe8ec;
+
+}
+
+/* SURPRISE */
+
+#surprise{
+
+    display:none;
+
+    margin-top:40px;
+
+    padding:40px 25px;
+
+    border-radius:25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,20,80,.2),
+            rgba(80,0,20,.4)
+        );
+
+    border:1px solid #ff5a82;
+
+    animation:appear 1.5s ease;
+
+}
+
+#surprise h2{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:4rem;
+
+    color:#ff7b9c;
+
+    margin-bottom:20px;
+
+}
+
+#surprise p{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:1.3rem;
+
+    line-height:1.8;
+
+}
+
+@keyframes appear{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px) scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0) scale(1);
+
+    }
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:600px){
+
+    .container{
+        padding:50px 15px;
+    }
+
+    .point{
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,.2);
+    }
+
+    .you-are{
+        font-size:3rem;
+    }
+
+    .message-box p{
+        font-size:1.1rem;
+    }
+
+    button{
+        width:90%;
+        padding:18px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- TITLE -->
+
+    <h1 class="main-title">
+        Happy Birthday
+    </h1>
+
+    <h2 class="favorite">
+        My Favourite Person ❤️
+    </h2>
+
+    <div class="love">
+        and My Love ❤️
+    </div>
+
+
+    <!-- INTRO -->
+
+    <p class="intro">
+
+        Today is all about
+        <span class="highlight">YOU!</span>
+
+        <br>
+
+        The most amazing, beautiful, kind and adorable person
+        who makes my life so much better just by being in it.
+
+        <br><br>
+
+        <span class="highlight">
+            I'm so lucky to have you in my life. ❤️
+        </span>
+
+    </p>
+
+
+    <!-- PHOTO -->
+
+    <div class="photo-frame">
+
+        <!-- CHANGE us.jpg TO YOUR PHOTO FILE NAME -->
+
+        <img src="us.jpg" alt="My Love and Me ❤️">
+
+    </div>
+
+
+    <!-- YOU ARE -->
+
+    <div class="you-are">
+        You are... ✨
+    </div>
+
+
+    <!-- SPECIAL POINTS -->
+
+    <div class="love-points">
+
+        <div class="point">
+            <span class="emoji">❤️</span>
+            My Happiness
+        </div>
+
+        <div class="point">
+            <span class="emoji">✨</span>
+            My Peace
+        </div>
+
+        <div class="point">
+            <span class="emoji">🌸</span>
+            My Strength
+        </div>
+
+        <div class="point">
+            <span class="emoji">∞</span>
+            My Forever
+        </div>
+
+    </div>
+
+
+    <!-- SPECIAL MESSAGE -->
+
+    <div class="message-box">
+
+        <p>
+
+            Thank you for coming into my life
+            and making it so beautiful.
+
+            <br>
+
+            You are not just my love,
+            you are my best friend,
+            my safe place and my greatest blessing.
+
+            <span class="final-love">
+
+                I love you more than words can ever say. ❤️
+
+            </span>
+
+        </p>
+
+    </div>
+
+
+    <!-- BUTTON -->
+
+    <button onclick="showSurprise()">
+
+        Click Here, My Love ❤️
+
+    </button>
+
+
+    <div class="small-text">
+
+        There's a little surprise waiting for you... ❤️
+
+    </div>
+
+
+    <!-- SURPRISE -->
+
+    <div id="surprise">
+
+        <h2>
+            My Forever ❤️
+        </h2>
+
+        <p>
+
+            Happy Birthday, My Love! 🎂❤️
+
+            <br><br>
+
+            I hope this new year of your life brings you
+            every happiness you deserve.
+
+            <br><br>
+
+            I promise to always be there to celebrate your smiles,
+            support you during your difficult days,
+            and love you with all my heart.
+
+            <br><br>
+
+            No matter how many birthdays pass,
+            you will always be the most special person to me.
+
+            <br><br>
+
+            <b>
+
+                I choose you.
+                <br>
+                Today.
+                Tomorrow.
+                And every day after that. ❤️
+
+            </b>
+
+            <br><br>
+
+            <span style="color:#ff6d90;font-size:1.5rem">
+
+                Happy Birthday once again, my beautiful love! ❤️🎂✨
+
+            </span>
+
+        </p>
+
+    </div>
+
+
+</div>
+
+
+<script>
+
+
+/* SHOW SURPRISE */
+
+function showSurprise(){
+
+    const surprise = document.getElementById("surprise");
+
+    surprise.style.display = "block";
+
+    surprise.scrollIntoView({
+        behavior:"smooth"
+    });
+
+    for(let i=0;i<80;i++){
+
+        createHeart();
+
+    }
+
+}
+
+
+/* FLOATING HEARTS */
+
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    heart.className = "floating-heart";
+
+    const hearts = [
+        "❤️",
+        "💖",
+        "💕",
+        "💗",
+        "✨",
+        "💝"
+    ];
+
+    heart.innerHTML =
+        hearts[Math.floor(Math.random()*hearts.length)];
+
+    heart.style.left =
+        Math.random()*100 + "vw";
+
+    heart.style.fontSize =
+        (Math.random()*30+18) + "px";
+
+    heart.style.animationDuration =
+        (Math.random()*5+5) + "s";
+
+    document.body.appendChild(heart);
+
+
+    setTimeout(()=>{
+
+        heart.remove();
+
+    },10000);
+
+}
+
+
+/* BACKGROUND HEARTS */
+
+setInterval(()=>{
+
+    if(Math.random()>.4){
+
+        createHeart();
+
+    }
+
+},900);
+
+
+</script>
+
+
+</body>
+</html>
